@@ -1,0 +1,37 @@
+#Write a program to determine the fee amount to be collected from a student. The input to the program are the type of the student, tuition fee, bus fee, hostel fee.
+Refer the table below for fee details
+Student Type
+Student Type denoted as
+Fee Details
+Merit Seat Day Scholar
+MSDS
+Tuition fee + Bus fee
+Merit Seat Hosteller
+MSH
+Tuition fee + Hostel fee
+Management Seat Day Scholar
+MGSDS
+150% of Tuition fee + Bus fee
+Management Seat Hosteller
+MGSH
+150% of Tuition fee + Hostel fee
+
+
+print("enter the student type")
+x=str(input())
+if(x=='MSDS'):
+    tf=float(input('enter tuition fee \n'))
+    bf=float(input('enter bus fee \n'))
+    print('The fees to be paid by the student is Rs.','%.2f'%(tf+bf))
+elif(x=='MSH'):
+    tf=float(input('enter tuition fee \n'))
+    hf=float(input('enter hostel fee \n'))
+    print('The fees to be paid by the student is Rs.','%.2f'%(tf+hf))
+elif(x=='MGSDS'):
+    tf=float(input('enter tuition fee \n'))
+    hf=float(input('enter bus fee \n'))
+    print('The fees to be paid by the student is Rs.','%.2f'%((1.5*tf)+bf))
+elif(x=='MGSH'):
+    tf=float(input('enter tuition fee \n'))
+    hf=float(input('enter hostel fee \n'))
+    print('The fees to be paid by the student is Rs.','%.2f'%((1.5*tf)+hf))
